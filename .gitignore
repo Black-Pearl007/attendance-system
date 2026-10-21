@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Secrets and biometric / personal data - NEVER commit
+.env
+backend/data/
+*.db
+embedding.key
+dataset/
+backend/dataset/
+
+# Downloaded models (fetched by scripts/download_models.py)
+backend/models/*.onnx
+
+# Evaluation outputs (commit the ones you cite in the report on purpose)
+backend/evaluation/results/
+
+# Node
+node_modules/
+frontend/dist/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/

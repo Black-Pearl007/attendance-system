@@ -1,0 +1,14 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+sqlalchemy>=2.0
+pydantic>=2.6
+pydantic-settings>=2.2
+python-multipart>=0.0.9
+pyjwt>=2.8
+bcrypt>=4.1
+cryptography>=42
+# OpenCV must stay on 4.x: the baseline uses the Haar CascadeClassifier (removed from the main module in 5.x)
+opencv-python-headless>=4.8,<5
+numpy>=1.26
+openpyxl>=3.1
+email-validator>=2.1
