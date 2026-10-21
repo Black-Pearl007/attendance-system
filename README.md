@@ -209,3 +209,5 @@ The full protocol, result tables to fill in, spoofing test procedure and limitat
 * Live-tracking state lives in one process; scaling out would need Redis or sticky sessions.
 * SQLite is used by default; set `DATABASE_URL` to PostgreSQL for multi-user deployments.
 * Model files are third-party (OpenCV Zoo: YuNet MIT, SFace Apache-2.0).
+  <img width="1913" height="862" alt="Screenshot 2026-10-21 202654" src="https://github.com/user-attachments/assets/e6419cce-e629-4c75-a33a-d3ccaf12d847" />
+
