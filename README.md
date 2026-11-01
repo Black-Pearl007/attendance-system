@@ -220,8 +220,8 @@ The full protocol, result tables to fill in, spoofing test procedure and limitat
 * **Liveness** is a head-turn challenge: it stops a still photo or a phone screen held up, **not** a pre-recorded video of the person turning their head, a 3-D mask or a deepfake. A stronger option is a trained passive anti-spoofing model (e.g. MiniFASNet) as a second check.
 * **Accuracy depends on enrolment quality and lighting**; fairness across skin tones, ages and glasses/occlusion should be measured on your own data before any real use (see the occlusion test).
 * Live-tracking state lives in one process; scaling out would need Redis or sticky sessions.
+* SQLite is used by default; set `DATABASE_URL` to PostgreSQL for multi-user deployments.
+* Model files are third-party (OpenCV Zoo: YuNet MIT, SFace Apache-2.0).
 
 <img width="1916" height="858" alt="image" src="https://github.com/user-attachments/assets/13d184bd-0187-458d-b274-2c35ff726a70" />
 
-* SQLite is used by default; set `DATABASE_URL` to PostgreSQL for multi-user deployments.
-* Model files are third-party (OpenCV Zoo: YuNet MIT, SFace Apache-2.0).
