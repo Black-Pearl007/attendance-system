@@ -40,7 +40,7 @@ attendance-system/
 ├── .gitignore                    # keeps secrets, databases, face data, models out of git
 ├── .github/workflows/ci.yml      # runs backend tests + frontend build on every push
 ├── docs/
-│   └── EVALUATION.md             # experiment protocol + result tables for the report
+│   └── EVALUATION.md             # experiment protocol and results
 ├── backend/                      # FastAPI + OpenCV
 │   ├── requirements.txt          # runtime packages
 │   ├── requirements-dev.txt      # + pytest, httpx
@@ -189,7 +189,7 @@ python -m evaluation.evaluate_lfw --subset test                    # LFW pairs: 
 python -m evaluation.evaluate_local --dataset dataset --unknown 2  # your own consented photos
 ```
 Outputs (ROC curve, EER, TAR@FAR, robustness bars, markdown tables) go to `backend/evaluation/results/`.
-The full protocol, result tables to fill in, spoofing test procedure and limitations are in [`docs/EVALUATION.md`](docs/EVALUATION.md).
+The full protocol, spoofing test procedure and limitations are in [docs/EVALUATION.md](docs/EVALUATION.md).
 
 ---
 
